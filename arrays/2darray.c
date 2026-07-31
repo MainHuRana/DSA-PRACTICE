@@ -9,7 +9,7 @@ void display(int n, int m, int arr[n][m]){
     }
 }
 
-// returns how many elements were kept
+
 int deletion(int n, int m, int arr[n][m], int target, int new_array[n*m]){
     int count = 0;
     for(int i = 0; i < n; i++){
@@ -35,8 +35,8 @@ int main(){
         }
     }
 
-    int target = arr[0][3];  // careful: assumes m > 3
-    int new_array[n*m];      // flat array since result size varies
+    int target = arr[0][3]; 
+    int new_array[n*m];     
 
     display(n, m, arr);
     int count = deletion(n, m, arr, target, new_array);
